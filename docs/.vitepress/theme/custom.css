@@ -1,0 +1,33 @@
+.vp-doc img {
+  cursor: zoom-in;
+}
+
+.mermaid-diagram {
+  margin: 16px 0;
+  overflow-x: auto;
+}
+
+.mermaid-diagram__content {
+  display: flex;
+  justify-content: center;
+  min-width: max-content;
+}
+
+.mermaid-diagram svg {
+  height: auto;
+  max-width: 100%;
+}
+
+.mermaid-diagram__error {
+  margin: 0;
+  padding: 16px;
+  color: var(--vp-c-danger-1);
+  background: var(--vp-c-danger-soft);
+  border-radius: 8px;
+  white-space: pre-wrap;
+}
+
+.medium-zoom-overlay,
+.medium-zoom-image--opened {
+  z-index: 100;
+}

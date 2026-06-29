@@ -4,6 +4,22 @@ export default defineConfig({
   title: '文档',
   description: '个人笔记与技术文档',
   base: '/',
+  markdown: {
+    config(md) {
+      const defaultFence = md.renderer.rules.fence
+
+      md.renderer.rules.fence = (tokens, idx, options, env, self) => {
+        const token = tokens[idx]
+        const language = token.info.trim().split(/\s+/)[0]
+
+        if (language === 'mermaid') {
+          return `<ClientOnly><MermaidDiagram code="${encodeURIComponent(token.content)}" /></ClientOnly>`
+        }
+
+        return defaultFence(tokens, idx, options, env, self)
+      }
+    }
+  },
   vite: {
     server: {
       allowedHosts: ['study.roywang.xyz', 'doc.roywang.xyz']
