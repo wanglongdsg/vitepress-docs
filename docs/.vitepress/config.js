@@ -22,10 +22,10 @@ export default defineConfig({
   },
   vite: {
     server: {
-      allowedHosts: ['study.roywang.xyz', 'doc.roywang.xyz']
+      allowedHosts: ['doc.roywang.xyz']
     },
     preview: {
-      allowedHosts: ['study.roywang.xyz', 'doc.roywang.xyz']
+      allowedHosts: ['doc.roywang.xyz']
     }
   },
   themeConfig: {
