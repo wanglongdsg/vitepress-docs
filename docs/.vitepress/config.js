@@ -4,6 +4,14 @@ export default defineConfig({
   title: '学习文档',
   description: '个人学习笔记与技术文档',
   base: '/',
+  vite: {
+    server: {
+      allowedHosts: ['study.roywang.xyz']
+    },
+    preview: {
+      allowedHosts: ['study.roywang.xyz']
+    }
+  },
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
