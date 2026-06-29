@@ -16,6 +16,18 @@ scripts\build.cmd
 scripts\preview.cmd
 ```
 
+本地开发地址：
+
+```text
+http://localhost:5188
+```
+
+构建预览地址：
+
+```text
+http://localhost:4188
+```
+
 ## 发布目录
 
 构建完成后，发布下面这个目录即可：
