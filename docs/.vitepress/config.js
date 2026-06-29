@@ -6,10 +6,10 @@ export default defineConfig({
   base: '/',
   vite: {
     server: {
-      allowedHosts: ['study.roywang.xyz']
+      allowedHosts: ['study.roywang.xyz', 'doc.roywang.xyz']
     },
     preview: {
-      allowedHosts: ['study.roywang.xyz']
+      allowedHosts: ['study.roywang.xyz', 'doc.roywang.xyz']
     }
   },
   themeConfig: {
